@@ -1,0 +1,9 @@
+<h2>My Todos</h2>
+<ul class="todos">
+  <li *ngFor="#todo of todos"
+    [class.selected] = "todo === selectedTodo"
+    [class.checked] = "todo.checked"
+    (click)="onSelect(todo)">
+    <span class="badge" (click)="toggleChecked(todo)">{{ (todo.checked && "X") || "--" }}</span>{{todo.name}}
+  </li>
+</ul>
