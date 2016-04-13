@@ -7,3 +7,9 @@
     <span class="badge" (click)="toggleChecked(todo)">{{ (todo.checked && "X") || "--" }}</span>{{todo.name}}
   </li>
 </ul>
+<div *ngIf="selectedTodo">
+  <h2>
+    {{ selectedTodo.name }}
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>

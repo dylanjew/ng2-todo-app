@@ -1,14 +1,14 @@
 import {Todo} from "./todo";
 
 export var TODOS: Todo[] = [
-  { "id": 11, "name": "Mr. Nice", "checked": false },
-  { "id": 12, "name": "Narco", "checked": false },
-  { "id": 13, "name": "Bombasto", "checked": true },
-  { "id": 14, "name": "Celeritas", "checked": false },
-  { "id": 15, "name": "Magneta", "checked": false },
-  { "id": 16, "name": "RubberMan", "checked": false },
-  { "id": 17, "name": "Dynama", "checked": false },
-  { "id": 18, "name": "Dr IQ", "checked": true },
-  { "id": 19, "name": "Magma", "checked": false },
-  { "id": 20, "name": "Tornado", "checked": false }
+  { "id": 11, "name": "Buy milk", "checked": false },
+  { "id": 12, "name": "Fix the stove", "checked": false },
+  { "id": 13, "name": "Practice jumper", "checked": true },
+  { "id": 14, "name": "Watch the game", "checked": false },
+  { "id": 15, "name": "Check the score", "checked": false },
+  { "id": 16, "name": "Sign up for classes", "checked": false },
+  { "id": 17, "name": "Read the book", "checked": false },
+  { "id": 18, "name": "Watch the lecture", "checked": true },
+  { "id": 19, "name": "Study for test", "checked": false },
+  { "id": 20, "name": "Finish assignment", "checked": false }
 ];

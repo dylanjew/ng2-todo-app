@@ -1,0 +1,20 @@
+<div *ngIf="todo" class="container">
+  <h2 class="row" >Todo: {{todo.name}}</h2>
+  <div class="row">
+    <div class="col-md-2">
+    <label >id:</label>
+    </div>
+    <div class="col-md-10">
+    {{todo.id}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+    <label>description:</label>
+    </div>
+    <div class="col-md-10">
+    <input [(ngModel)]="todo.name" placeholder="Your Todo" />
+    </div>
+  </div>
+  <button class="row" (click)="goBack()">Back</button>
+</div>

@@ -1,13 +1,16 @@
 import { Component, OnInit } from "angular2/core";
 import { Router } from "angular2/router";
 
-import { Todo } from "./todo";
-import { TodoService } from "./todo.service";
+import { Todo }                from "./todo";
+import { TodoDetailComponent } from "./todo-detail.component";
+
+import { TodoService }         from "./todo.service";
 
 @Component ({
   selector: "todo-list",
   templateUrl: "app/todos.component.html",
-  styleUrls: ["app/todos.component.css"]
+  styleUrls: ["app/todos.component.css"],
+  directives: [TodoDetailComponent]
 })
 
 export class TodoListComponent implements OnInit {
@@ -24,6 +27,11 @@ export class TodoListComponent implements OnInit {
 
   getTodos() {
     this._todoService.getTodos().then(todos => this.todos = todos);
+  }
+
+  gotoDetail() {
+    let link = ["TodoDetail", { id: this.selectedTodo.id }];
+    this._router.navigate(link);
   }
 
   onSelect(todo: Todo) {

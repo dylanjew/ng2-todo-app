@@ -21,4 +21,9 @@ export class DashboardComponent {
     this._todoService.getTodos()
       .then(todos => this.todos = todos.slice(0, 5));
   }
+
+  gotoDetail(todo: Todo) {
+    let link = ["TodoDetail", { id: todo.id }];
+    this._router.navigate(link);
+  }
 }

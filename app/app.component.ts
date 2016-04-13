@@ -3,8 +3,10 @@ import { RouteConfig, ROUTER_PROVIDERS, ROUTER_DIRECTIVES} from "angular2/router
 
 import { DashboardComponent } from "./dashboard.component";
 import { TodoListComponent } from "./todos.component";
+import { TodoDetailComponent } from "./todo-detail.component";
 
 import { TodoService } from "./todo.service";
+
 @Component({
   selector: "my-app",
   template: `
@@ -34,6 +36,11 @@ import { TodoService } from "./todo.service";
     name: "Dashboard",
     component: DashboardComponent,
     useAsDefault: true
+  },
+  {
+    path: "detail/:id",
+    name: "TodoDetail",
+    component: TodoDetailComponent,
   }
 ])
 

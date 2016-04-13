@@ -7,4 +7,10 @@ export class TodoService {
   getTodos() {
     return Promise.resolve(TODOS);
   }
+
+  getTodo(id) {
+    return Promise.resolve(TODOS).then(
+      todos => todos.filter(todo => todo.id === id)[0]
+    );
+  }
 }
