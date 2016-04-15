@@ -8,8 +8,8 @@ import { TodoService }         from "./todo.service";
 
 @Component ({
   selector: "todo-list",
-  templateUrl: "app/todos.component.html",
-  styleUrls: ["app/todos.component.css"],
+  templateUrl: "public/todos.component.html",
+  styleUrls: ["public/todos.component.css"],
   directives: [TodoDetailComponent]
 })
 

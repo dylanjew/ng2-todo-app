@@ -1,5 +1,8 @@
 <div *ngIf="todo" class="container">
-  <h2 class="row" >Todo: {{todo.name}}</h2>
+  <div class="row" >
+    Completed: <span>{{todo.checked}}</span>
+  </div>
+  <h2 class="row">{{todo.name}}</h2>
   <div class="row">
     <div class="col-md-2">
     <label >id:</label>

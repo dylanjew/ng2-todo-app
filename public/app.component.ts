@@ -17,7 +17,7 @@ import { TodoService } from "./todo.service";
     </nav>
     <router-outlet></router-outlet>
   `,
-  styleUrls: ["app/app.component.css"],
+  styleUrls: ["public/app.component.css"],
   directives: [ROUTER_DIRECTIVES],
   providers: [
     ROUTER_PROVIDERS,
