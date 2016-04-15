@@ -6,8 +6,8 @@ import { TodoService } from "./todo.service";
 
 @Component({
   selector: "dashboard",
-  templateUrl: "app/dashboard.component.html",
-  styleUrls: ["app/dashboard.component.css"]
+  templateUrl: "public/dashboard.component.html",
+  styleUrls: ["public/dashboard.component.css"]
 })
 
 export class DashboardComponent {
